@@ -46,7 +46,39 @@
                 <input type="checkbox" checked="checked">
                 <span class="control"></span>
               </label>
-              
+              <div id="circle-container">
+     
+                <!--radius = (width / 2) - (strokeWidth * 2)-->
+            <svg
+                class="progress-ring"
+                width="120"
+                height="120">
+               <circle
+                 class="progress-ring__circle"
+                 stroke="black"
+                 stroke-width="4"
+                 fill="transparent"
+                 r="52"
+                 cx="60"
+                 cy="60"/>
+             </svg>
+            <div class="circle-input">
+                <button id="min" onclick="dec()">-</button>
+                
+                    
+            
+                <input
+                    value="35"
+                    name="number"
+                    type="number"
+                    step="5"
+                    min="0"
+                    max="100"
+                    placeholder="progress"
+                    >
+                    <button id="plus" onclick="inc()">+</button> 
+            </div>
+        </div>
     </div>
 <script>
     function slider(){
