@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Rage Sliders</h1>
+        <div class="range-container">
+            <input type="range" min="-100" max="0" value="0" class="range blue"/>
+        </div>
+        <div class="slider">
+            <input type="range" id="rageslider" min="0" max="100" value="30" oninput="slider()">
+            <p id="rangeValue">30</p>
+        </div>
+        <div class="value-slider-container" id="value-slider-container">
+            <div class="value-slider">0</div>
+            <input type="range" min="0" max="10" step="1" value="0">
+        </div>
+        <h1>Buttons </h1>
+        <button class="radiusPulse"></button>
+        <div class="pressDownButton-container">
+            <button type="submit" class="pressDownButton">Press F</button>
+        </div>
+        <button class="circleScaleBtn">Press F</button>
+        <button class="magnifyBorder">Press F</button>
+        <h1>Toggle Switch </h1>
+        <div class="toggle-container">
+        <label class="toggle sun-moon">
+            <input type="checkbox" class="toggle-checkbox">
+            <div class="toggle-btn"></div>
+        </label>
+         </div>
+         <div class="nice-but">
+            <input type="checkbox" id="togglei" />
+            <label for="togglei" class="toggleWrapper">
+                <div class="togglei"></div>
+              </label>
+            </div>
+            <label class="toggle-control">
+                <input type="checkbox" checked="checked">
+                <span class="control"></span>
+              </label>
+              
+    </div>
+<script>
+    function slider(){
+           rageSlider = document.querySelector('#rageslider').value
+           document.querySelector("#rangeValue").innerText = rageSlider
+    }
+</script>
+<script src="js/bluered.js"></script>
+<script src="js/valueslider.js"></script>
+</body>
+</html>
