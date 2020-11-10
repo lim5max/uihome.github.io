@@ -521,3 +521,45 @@ body input:checked + .toggleWrapper .togglei {
 	background: white;
 	transition: left 0.15s ease-in;
 }
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+#circle-container{
+    position: relative;
+    margin-top: 100px;
+    max-width: 120px;
+    max-height: 120px;
+
+}
+.progress-ring__circle {
+    transition: 0.35s stroke-dashoffset;
+  
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+#circle-container input{
+    background-color: tomato;
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+}
+.circle-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.circle-input button{
+    background-color: teal;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 50%;
+}
